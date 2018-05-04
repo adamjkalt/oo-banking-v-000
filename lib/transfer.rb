@@ -23,6 +23,7 @@ def reverse_transfer
     "Transaction rejected. Please check your account balance."
   else
     "complete"
+  end
 end
 
 end
