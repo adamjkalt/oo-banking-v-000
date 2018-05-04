@@ -10,11 +10,7 @@ def initialize(sender, receiver, amount)
 end
 
 def valid?
-  if @sender.valid? && @amount <= @sender.balance && @receiver.valid?
-    true
-  else
-    false
-  end
+  @sender.valid? && @amount <= @sender.balance && @receiver.valid?
 end
 
 def execute_transaction
