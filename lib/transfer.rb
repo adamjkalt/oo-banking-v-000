@@ -14,7 +14,7 @@ def valid?
 end
 
 def execute_transaction
-  @receiver.balance << @sender.amount
+  @balance << @amount
   @status = "complete"
 end
 
