@@ -14,6 +14,7 @@ def valid?
 end
 
 def execute_transaction
+  @receiver.balance << @amount
 end
 
 def reverse_transfer
