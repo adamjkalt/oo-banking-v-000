@@ -19,7 +19,7 @@ def execute_transaction
 end
 
 def reverse_transfer
-  if self.valid?
+  if @sender.valid?
     "complete"
   else
     "Transaction rejected. Please check your account balance."
