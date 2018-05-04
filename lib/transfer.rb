@@ -10,7 +10,7 @@ def initialize(sender, receiver, amount)
 end
 
 def valid?
-  if @status == "open" && @balance > 0
+  if bankaccount.status == "open" && bankaccount.balance > 0
     true
   else
     false
