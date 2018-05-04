@@ -9,7 +9,7 @@ def initialize(sender, receiver, amount)
   @status = "pending"
 end
 
-def valid?
+def valid?(bankaccount)
   if bankaccount.valid?
     true
   else
