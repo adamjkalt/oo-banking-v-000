@@ -10,7 +10,6 @@ def initialize(sender, receiver, amount)
 end
 
 def valid?
-  #if sender is "open" and transfer amount is <= balance AND receiver is "open"
   if @sender.valid? && @amount <= @sender.balance && @receiver.valid?
     true
   else
