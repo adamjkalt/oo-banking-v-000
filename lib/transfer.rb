@@ -10,6 +10,11 @@ def initialize(sender, receiver, amount)
 end
 
 def valid?
+  if bankaccount.valid?
+    true
+  else
+    false
+  end
 end
 
 def execute_transaction
