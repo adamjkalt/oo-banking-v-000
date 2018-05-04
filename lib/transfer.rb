@@ -10,7 +10,7 @@ def initialize(sender, receiver, amount)
 end
 
 def valid?
-  if bankaccount.status == "open" && bankaccount.balance > 0
+  if self.status == "open" && self.balance > 0
     true
   else
     false
