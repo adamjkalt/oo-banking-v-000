@@ -15,6 +15,7 @@ end
 
 def execute_transaction
   @receiver.balance << @amount
+  @receiver.balance
   @status = "complete"
 end
 
