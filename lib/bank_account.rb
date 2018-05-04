@@ -20,6 +20,8 @@ end
 def valid?
   if @status && @balance > 0
     true
+  else
+    false
   end
 end
 
