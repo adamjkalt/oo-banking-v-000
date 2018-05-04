@@ -14,7 +14,7 @@ def valid?
 end
 
 def execute_transaction
-  @balance << @amount
+  @balance += @amount
   @status = "complete"
 end
 
